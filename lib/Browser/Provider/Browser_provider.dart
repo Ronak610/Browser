@@ -7,6 +7,7 @@ class Browser_Provider extends ChangeNotifier {
   String SearchData = "https://www.google.com/";
   InAppWebViewController? inAppWebViewController;
   int? index;
+  double progerss=0.0;
   void ChangeSearch(String data) {
     SearchData = data;
     notifyListeners();
@@ -15,6 +16,11 @@ class Browser_Provider extends ChangeNotifier {
     index = ind;
     notifyListeners();
   }
+  void ChangeProgress(inda) {
+    progerss = inda;
+    notifyListeners();
+  }
+
 
 
   List<Browser_Modal> modal = [

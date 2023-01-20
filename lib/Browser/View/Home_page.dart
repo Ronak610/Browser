@@ -22,7 +22,7 @@ class _Home_PageState extends State<Home_Page> {
     return SafeArea(
         child: Scaffold(
           backgroundColor: Colors.white,
-      appBar: AppBar(),
+      appBar: AppBar(backgroundColor: Colors.white,title: Text("Wikipedia",style: TextStyle(color: Colors.black),),),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,

@@ -19,7 +19,7 @@ class _show_PageState extends State<show_Page> {
         body: InAppWebView(
           initialUrlRequest: URLRequest(
               url: Uri.parse(
-                  "${Provider.of<Browser_Provider>(context, listen: true).modal[Provider.of<Browser_Provider>(context, listen: true).index!].uri}")),
+                  "${Provider.of<Browser_Provider>(context, listen: true).modal[Provider.of<Browser_Provider>(context, listen: true).index! - 9].uri}")),
         ),
       ),
     );
